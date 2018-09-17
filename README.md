@@ -7,12 +7,12 @@ Visualizing chromosomes is important for  many  for  medical  diagnostic  proble
 
 # Dependencies
 
-    -Keras with TensorFlow backend
-    -Numpy
-    -Matplotlib
-    -OS
-    -Scikit-Image
-    -H5py
+    - Keras with TensorFlow backend
+    - Numpy
+    - Matplotlib
+    - OS
+    - Scikit-Image
+    - H5py
 
 
 
