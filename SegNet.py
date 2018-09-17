@@ -55,7 +55,10 @@ def SegNet(input_shape=(88, 88, 1), classes=4):
     x = BatchNormalization()(x)
     x = Dropout(0.5)(x)
     
+    
+    
     #Decoder
+    
     
     # Deconv Block 1
     x = UpSampling2D(size=(2, 2))(x)
@@ -69,6 +72,8 @@ def SegNet(input_shape=(88, 88, 1), classes=4):
                                                       kernel_initializer = 'he_normal')(x)
     x = BatchNormalization()(x)
     x = Dropout(0.5)(x)
+    
+    
     
     # Deconv Block 2
     x = UpSampling2D(size=(2, 2))(x)
