@@ -48,8 +48,9 @@ the whole dataset except the last 20 images with 5% validation split.
 ## Training
 
 The model was trained using adam optimizer for an hour on colab GPU. Since the resolution is low, the model is prone to overfitting and was not giving good results on
-the test set. So dropout layes are added after every block. To further ensure that the model does not overfit, EarlyStopping callback of Keras is used. The training
-stopped after 6 epochs due to this.
+the test set. So dropout layes are added after every block. To further ensure that the model does not overfit, EarlyStopping callback of Keras is used. The training 
+automatically stopped after the 9th epoch.
+
 
 ## Results
 
